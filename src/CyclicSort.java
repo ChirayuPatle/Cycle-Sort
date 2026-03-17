@@ -1,7 +1,8 @@
 import java.util.Arrays;
 public class CyclicSort {
     public static void main(String[] args) {
-        int[] arr = {5,4,3,2,1};
+//        int[] arr = {5,4,3,2,1};
+        int[] arr = {1,2,3,4,5};
         sort(arr);
         System.out.println(Arrays.toString(arr));
     }
@@ -11,7 +12,7 @@ public class CyclicSort {
         int i =0;
 
         while(i < arr.length){
-            int correct = arr[i] - 1; // Position of element
+            int correct = arr[i] - 1; // Position of element (range: 1 to n)
             if(arr[i] != arr[correct]){
                 // swap elements when element is not at correct index
                 int temp = arr[i];
