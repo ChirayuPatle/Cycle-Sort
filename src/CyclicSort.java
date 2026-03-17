@@ -13,13 +13,13 @@ public class CyclicSort {
         while(i < arr.length){
             int correct = arr[i] - 1; // Position of element
             if(arr[i] != arr[correct]){
-                // traverse for other element
+                // swap elements when element is not at correct index
                 int temp = arr[i];
                 arr[i] = arr[correct];
                 arr[correct] =temp;
             }
             else{
-                // swap elements when element is not at correct index
+                // traverse for other element
                 i++;
             }
         }
